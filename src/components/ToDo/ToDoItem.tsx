@@ -102,12 +102,13 @@ class ToDoItem extends Component<IToDoProps,IToDoState> {
                 </div>
 
             </form>
+                <div className={"ToDoItem-edit-save"}>
+                    <FontAwesomeIcon icon={faFloppyDisk} onClick={()=>this.setState({isEditing:false})}/>
+                </div>
             <div className={"ToDoItem-edit-trash"}>
                 <FontAwesomeIcon onClick={this.handleRemove} icon={faTrash} />
             </div>
-            <div className={"ToDoItem-edit-save"}>
-                <FontAwesomeIcon icon={faFloppyDisk} onClick={()=>this.setState({isEditing:false})}/>
-            </div>
+
         </div>
         )
 

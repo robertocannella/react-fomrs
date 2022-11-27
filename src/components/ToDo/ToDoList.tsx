@@ -18,8 +18,10 @@ class ToDoList extends Component<any, IToDoListState> {
         super(props);
         this.state = {
             tasks: [
-                {task: 'get dog', id: uuidv4(),isDone:false},
-                {task: 'get cat', id: uuidv4(),isDone:true}
+                {task: 'feed dog', id: uuidv4(),isDone:false},
+                {task: 'wash cat', id: uuidv4(),isDone:true},
+                {task: 'milk goat', id: uuidv4(),isDone:true},
+                {task: 'use Graphql', id: uuidv4(),isDone:true}
             ]
         }
         this.addTask = this.addTask.bind(this);

@@ -51,6 +51,7 @@ class FormAddItem extends Component<any,any> {
             <form  onSubmit={this.handleSubmit} noValidate={true} className={"form-add-item"}>
                 <label htmlFor="new-todo">New To Do:</label>
                 <input
+                    className={"form-add-item-input"}
                     id="new-todo"
                     type="text"
                     value={this.state.task}
