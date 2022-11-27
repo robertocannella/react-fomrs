@@ -1,0 +1,146 @@
+.form-add-item{
+    padding-top:   20px;
+
+}
+
+input {
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border-radius: 6px;
+    border: none;
+    color: red;
+    font-size: 20px;
+    padding: 6px;
+    width: 200px;
+    cursor: pointer;
+}
+
+input:focus{
+    outline-color: #ff6666;
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    background-color: #fff;
+    font: inherit;
+    color: currentColor;
+    width: 1.15em;
+    height: 1.15em;
+    border: 0.15em solid currentColor;
+    border-radius: 0.15em;
+    transform: translateY(-0.075em);
+    margin-top: 6px;
+    display: grid;
+    place-content: center;
+}
+
+input[type="checkbox"]::before {
+    content: "";
+    width: 0.65em;
+    height: 0.65em;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em #dc8181;
+}
+
+input[type="checkbox"]:checked::before {
+    transform: scale(1);
+}
+/*To do list*/
+
+.ToDoList-container{
+    margin: 4rem auto;
+    padding: 2rem 3rem 3rem;
+    max-width: 600px;
+    background: #ff6666;
+    color: #fff;
+    box-shadow: -20px -20px 0px 0px rgba(100, 100, 100, 0.1);
+    overflow: hidden;
+}
+.ToDoList-container ul {
+    margin-top: 2.6rem;
+    list-style: none;
+}
+.ToDoList-container h1 {
+    font-weight: normal;
+    font-size: 2.6rem;
+    letter-spacing: 0.05em;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+.ToDoList-container h1 span {
+    display: block;
+    font-size: 0.8rem;
+    margin-bottom: 0.7rem;
+    margin-left: 3px;
+    margin-top: 0.2rem;
+}
+
+/*To do items*/
+.ToDoItem-container > div,
+.ToDoItem__form{
+    display: flex;
+
+}
+
+.ToDoItem-container {
+    display: flex;
+    margin: 0 -3rem 4px;
+    padding: 1.1rem 3rem;
+    height: 77px;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.2);
+    overflow: hidden;
+    position: relative;
+    transition: opacity 500ms ease-in-out;
+}
+
+.ToDoItem__is-done{
+    width: 75px;
+    align-self: center;
+    padding-left: 1rem;
+}
+.ToDoItem-view-task{
+    background: #ffd2d2;
+    color: red;
+    padding: 6px;
+    align-self: center;
+    border-radius: 6px;
+    width: 160px;
+    font-size: 20px;
+    margin-right: 1rem;
+
+}
+
+.ToDoItem-edit-trash,
+.ToDoItem-view-trash {
+    margin-top: 7px;
+}
+.ToDoItem-view-edit,
+.ToDoItem-edit-save {
+    margin-top: 7px;
+    margin-left: 1rem;
+}
+
+/*button*/
+
+
+.btn-add-task {
+    margin-top: 1rem;
+    padding: 6px;
+    background: #ffd2d2;
+    border: none;
+    border-radius: 6px;
+    color: red;
+    font-size: 20px;
+}
+
+/*errors*/
+.error {
+    display: block;
+}
+.form-notify {
+    display: none;
+}
+
